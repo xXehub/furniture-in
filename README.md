@@ -4,13 +4,14 @@
 Simple furniture shop made by **Satanic Team**
 if someone sells this source code. It means you got scammed lol
 
-
-## API Reference
-
-#### Get all items
+#### Admin and User Login
 
 ```txt
-  ./botconfig/config.json
+  ./admin/admin_login.php
+```
+
+```txt
+  ./user_login.php
 ```
 
 | Username | Password                |
@@ -21,11 +22,6 @@ if someone sells this source code. It means you got scammed lol
 
 ## This project is still under construction
 
-To run bot, run the following command
-
-```bash
-  npm start
-```
 
 
 ## Support

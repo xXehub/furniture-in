@@ -16,8 +16,8 @@ if someone sells this source code. It means you got scammed lol
 
 | Username | Password                |
 | :-------- | :------------------------- |
-| `admin` | 111 |
-| `memew@gmail.com`      |memew |
+| `jamaludin@gmail.com` | jamal23 |
+| `jokowi@gmail.com`      |jokowi123 |
 
 
 ## This project is still under construction

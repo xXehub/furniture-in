@@ -21,14 +21,14 @@ if (isset($_POST['submit'])) {
    $row = $select_user->fetch(PDO::FETCH_ASSOC);
 
    if ($select_user->rowCount() > 0) {
-      $message[] = 'email sudaah terdaftar!';
+      $_SESSION['duplikat'] = 'email sudaah terdaftar!';
    } else {
       if ($pass != $cpass) {
-         $message[] = 'konfirmasi password tidak sama!';
+         $_SESSION['error'] = 'konfirmasi password tidak sama!';
       } else {
          $insert_user = $conn->prepare("INSERT INTO `users`(name, email, password) VALUES(?,?,?)");
          $insert_user->execute([$name, $email, $cpass]);
-         $message[] = 'buat akun sukses, login sekarang!';
+         $_SESSION['register_berhasil'] = 'buat akun sukses, login sekarang!';
       }
    }
 }
@@ -53,6 +53,7 @@ if (isset($_POST['submit'])) {
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
    <?php include 'components/user_header.php'; ?>
    <div class="login">
@@ -66,8 +67,37 @@ if (isset($_POST['submit'])) {
                      <!-- <h3>buat akun</h3> -->
                      <input type="text" name="name" required placeholder="masukkan username" maxlength="20" class="kolom-field">
                      <input type="email" name="email" required placeholder="masukkan email" maxlength="50" class="kolom-field" oninput="this.value = this.value.replace(/\s/g, '')">
-                     <input type="password" name="pass" required placeholder="mmasukkan password" maxlength="20" class="kolom-field" oninput="this.value = this.value.replace(/\s/g, '')">
+                     <input type="password" name="pass" required placeholder="masukan password" maxlength="20" class="kolom-field" oninput="this.value = this.value.replace(/\s/g, '')">
                      <input type="password" name="cpass" required placeholder="konfirmasi password" maxlength="20" class="kolom-field" oninput="this.value = this.value.replace(/\s/g, '')">
+                     <p style="color:red;">
+                     <!-- kalo password salah -->
+                        <?php
+                        if (isset($_SESSION['error'])) {
+                           echo $_SESSION['error'];
+                           unset($_SESSION['error']);
+                        }
+                        ?>
+                     </p>
+
+                     <!-- kalo duplikat email -->
+                     <p style="color:red;">
+                     <?php
+                        if (isset($_SESSION['duplikat'])) {
+                           echo $_SESSION['duplikat'];
+                           unset($_SESSION['duplikat']);
+                        }
+                        ?>
+                     </p>
+
+                     <!-- kalo sukses regist -->
+                     <p style="color:green;">
+                        <?php
+                        if (isset($_SESSION['register_berhasil'])) {
+                           echo $_SESSION['register_berhasil'];
+                           unset($_SESSION['register_berhasil']);
+                        }
+                        ?>
+                     </p>
                      <input type="submit" value="daftar sekarang" class="btn-login" name="submit">
                      <p>sudah punya akun?</p>
                      <a class="login-subtittle" href="user_login.php" class="option-btn">login sekarang</a>
@@ -80,4 +110,5 @@ if (isset($_POST['submit'])) {
    <?php include 'components/footer.php'; ?>
    <script src="js/script.js"></script>
 </body>
+
 </html>

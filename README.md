@@ -19,7 +19,7 @@ if someone sells this source code. It means you got scammed lol
 | `memew@gmail.com`      |memew |
 
 
-## Running Bot
+## This project is still under construction
 
 To run bot, run the following command
 

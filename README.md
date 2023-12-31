@@ -13,15 +13,10 @@ if someone sells this source code. It means you got scammed lol
   ./botconfig/config.json
 ```
 
-| Parameter | Description                |
+| Username | Password                |
 | :-------- | :------------------------- |
-| `token` | [Discord Developers]()|
-| `memer_api`      |[Meme-Development DC](https://discord.com/invite/Mc2FudJkgP) |
-| `spotify.clientSecret` | [Spotify-Developer](https://developer.spotify.com/)|
-| `spotify.clientID` | [Spotify-Developer](https://developer.spotify.com/)|
-| `fnbr` | is a **FNB**R token, which you may get from [FNBRO.co](https://fnbr.co/api/docs) (needed for fnshop)|
-| `fortnitetracker` |  is a **fortnite Tracker** token, which you may get from [fortnitetracker.com](https://fortnitetracker.com/site-api)|
-
+| `admin` | 111 |
+| `memew@gmail.com`      |memew |
 
 
 ## Running Bot

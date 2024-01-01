@@ -1,9 +1,6 @@
 <?php
-
 include 'components/connect.php';
-
 session_start();
-
 if (isset($_SESSION['user_id'])) {
    $user_id = $_SESSION['user_id'];
 } else {
@@ -11,12 +8,10 @@ if (isset($_SESSION['user_id'])) {
 };
 
 include 'components/wishlist_cart.php';
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,29 +22,19 @@ include 'components/wishlist_cart.php';
    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
    <!--- css link lur, eksternal btw-->
-   <link rel="stylesheet" href="./css/style_sakkarepmu.css">
+   <link rel="stylesheet" href="./assets/css/style_sakkarepmu.css">
 
    <!--- google font link-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
-
-
    <!--- HEADER -->
    <?php include 'components/user_header.php'; ?>
-
-
-
    <!--- MAIN-->
-
    <main>
-
       <!--- BANNER-->
-
       <div class="banner">
          <div class="container">
             <div class="slider-container has-scrollbar">
@@ -77,183 +62,107 @@ include 'components/wishlist_cart.php';
                </div>
 
                <div class="slider-item">
-
                   <img src="./assets/images/.jpg" alt="new fashion summer sale" class="banner-img">
-
                   <div class="banner-content">
-
                      <p class="banner-subtitle">Sale Offer</p>
-
                      <h2 class="banner-title">New Modern Sofa</h2>
-
                      <p class="banner-text">
                         starting at IDR <b>300.000</b>.99
                      </p>
-
                      <a href="#" class="banner-btn">Shop now</a>
-
                   </div>
-
                </div>
-
             </div>
-
          </div>
-
       </div>
-
-
-
-
-
-      <!--
-      - CATEGORY
-    -->
-
+      <!-- Kategori -->
       <div class="category">
-
          <div class="container">
-
             <div class="category-item-container has-scrollbar">
-
                <div class="category-item">
-
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/armchair.webp" alt="Armschair" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Armschair</h3>
-
                         <p class="category-item-amount">(53)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
-
                <div class="category-item">
 
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/beds.webp" alt="winter wear" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Beds</h3>
-
                         <p class="category-item-amount">(58)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
-
                <div class="category-item">
-
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/couch.webp" alt="Couch" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Couch</h3>
-
                         <p class="category-item-amount">(68)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
-
                <div class="category-item">
-
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/dinningtable.webp" alt="Dinning Table" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Dinning Table</h3>
-
                         <p class="category-item-amount">(84)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
-
                <div class="category-item">
-
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/matress.webp" alt="Matress" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Matress</h3>
-
                         <p class="category-item-amount">(35)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
-
                <div class="category-item">
-
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/ottoman.webp" alt="Ottoman" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Ottoman</h3>
-
                         <p class="category-item-amount">(16)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
-
                <div class="category-item">
-
                   <div class="category-img-box">
                      <img src="./assets/images/icon_sakkarepmu/sofaset.webp" alt="Sofa Set" width="30">
                   </div>
-
                   <div class="category-content-box">
-
                      <div class="category-content-flex">
                         <h3 class="category-item-title">Sofa Set</h3>
-
                         <p class="category-item-amount">(27)</p>
                      </div>
-
-                     <a href="#" class="category-btn">Show all</a>
-
+                     <a href="#" class="category-btn">Tampilkan Semua</a>
                   </div>
-
                </div>
 
                <!--  <div class="category-item">
@@ -265,7 +174,7 @@ include 'components/wishlist_cart.php';
                                 <h3 class="category-item-title">Hat & caps</h3>
                                 <p class="category-item-amount">(39)</p>
                             </div>
-                            <a href="#" class="category-btn">Show all</a>
+                            <a href="#" class="category-btn">Tampilkan Semua</a>
                         </div>
                     </div> -->
 
@@ -291,6 +200,12 @@ include 'components/wishlist_cart.php';
                            <form action="" method="post" class="swiper-slide slide">
                               <div class="showcase">
                                  <div class="showcase-banner">
+                                    <!-- gawe post (array key) -->
+                                    <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
+                                    <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
+                                    <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
+                                    <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
+
                                     <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
                                     <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
                                     <p class="showcase-badge">TESTING</p>
@@ -301,7 +216,10 @@ include 'components/wishlist_cart.php';
                                        <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="btn-action">
                                           <ion-icon href="quick_view.php?pid=<?= $fetch_product['id']; ?>" name="eye-outline"></ion-icon>
                                        </a>
-                                             <!-- <button class="btn-action">
+                                       <a class="btn-action" name="add_to_cart">
+                                          <ion-icon name="cart-outline"></ion-icon>
+                                       </a>
+                                       <!-- <button class="btn-action">
                                        <ion-icon name="repeat-outline"></ion-icon>
                                     </button>
                                     <button class="btn-action">
@@ -316,22 +234,21 @@ include 'components/wishlist_cart.php';
                                        <h3 class="showcase-title"><?= $fetch_product['name']; ?></h3>
                                        <!-- <h3 class="showcase-isilur">sdsdsd</h3> -->
                                     </a>
-                                                <!-- <div class="showcase-rating">
+                                    <!-- <div class="showcase-rating">
                                           <ion-icon name="star"></ion-icon>
                                           <ion-icon name="star"></ion-icon>
                                           <ion-icon name="star"></ion-icon>
                                           <ion-icon name="star-outline"></ion-icon>
                                           <ion-icon name="star-outline"></ion-icon>
                                        </div> -->
-
                                     <div class="price-box">
                                        <p class="price"><span>Rp.</span><?= $fetch_product['price']; ?></p>
-                                       <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
+                                       <input type="number" name="qty" class="kuantitas-field" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
                                        <!-- <del>IDR 75.00</del> -->
                                     </div>
-
                                  </div>
                               </div>
+                              <!-- <input type="submit" value="tambahkan ke keranjang" class="btn btn-login" name="add_to_cart"> -->
                            </form>
                      <?php
                         }
@@ -345,51 +262,14 @@ include 'components/wishlist_cart.php';
          </div>
       </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
    </main>
-
-
-
-
-
-   <!--
-    - FOOTER
-  -->
-
-   <?php
-   include 'components/footer.php';
-
-   ?>
-
-
-
-
-
-
-   <!--
-    - custom js link
-  -->
+   <!-- footer -->
+   <?php include 'components/footer.php'; ?>
+   <!-- jawir script -->
    <script src="./assets/js/script.js"></script>
-
-   <!--
-    - ionicon link
-  -->
+   <!-- ion icon -->
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
 </body>
 
 </html>

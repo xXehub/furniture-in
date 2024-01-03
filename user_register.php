@@ -98,7 +98,7 @@ if (isset($_POST['submit'])) {
                         }
                         ?>
                      </p>
-                     <input type="submit" value="daftar sekarang" class="btn-login" name="submit">
+                     <input type="submit" value="daftar sekarang" class="btn btn-login" name="submit">
                      <p>sudah punya akun?</p>
                      <a class="login-subtittle" href="user_login.php" class="option-btn">login sekarang</a>
                   </form>

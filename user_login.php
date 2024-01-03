@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
                      }
                      ?>
                   </p>
-                  <input type="submit" value="login sekarang" class="btn-login" name="submit">
+                  <input type="submit" value="login sekarang" class="btn btn-login" name="submit">
                   <p>tidak punya akun?<a href="user_register.php" class="login-subtittle">buat akun</a></p>
 
                </form>

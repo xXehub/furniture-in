@@ -6,13 +6,18 @@ if someone sells this source code. It means you got scammed lol
 
 #### Admin and User Login
 
-```txt
-  ./admin/placed_orders.php
-```
-<img src="https://ui_screenshot/home_page.png" alt="php"/> 
+
 ```txt
   ./home.php
 ```
+![home.php](https://raw.githubusercontent.com/xXehub/furniture-in/main/ui_screenshot/home_page.png)
+
+```txt
+  ./admin/placed_orders.php
+```
+
+![home.php](https://raw.githubusercontent.com/xXehub/furniture-in/main/ui_screenshot/admin_orderlist.png)
+
 
 | Username | Password                |
 | :-------- | :------------------------- |

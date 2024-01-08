@@ -7,11 +7,11 @@ if someone sells this source code. It means you got scammed lol
 #### Admin and User Login
 
 ```txt
-  ./admin/admin_login.php
+  ./admin/placed_orders.php
 ```
-
+<img src="https://ui_screenshot/home_page.png" alt="php"/> 
 ```txt
-  ./user_login.php
+  ./home.php
 ```
 
 | Username | Password                |
